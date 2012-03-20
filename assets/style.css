@@ -33,5 +33,8 @@ body {
 }
 h1 {
 	font-size: 32px;
-	line-height: 38px;
+	line-height: 42px;
+}
+p {
+	line-height:20px;
 }
