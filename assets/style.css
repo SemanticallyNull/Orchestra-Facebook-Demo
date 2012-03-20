@@ -26,7 +26,7 @@ body {
 	width:760px;
 }
 #header {
-	margin:20px 0 0 12.5px;
+	margin:20px 0 12.5px 0;
 }
 #logo {
 	width:300px;
