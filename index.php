@@ -13,7 +13,7 @@ $facebook = new Facebook($fb_config);
 
 if($facebook->getUser() !== 0) { // If the user is logged in
 	try {
-		$user_data = $facebook->api('/me','GET')
+		$user_data = $facebook->api('/me','GET');
 	} catch(FacebookApiException $e) {
 		// Facebook may give you a user ID even if the user is logged
 		// out. You'll need to make them login again.
