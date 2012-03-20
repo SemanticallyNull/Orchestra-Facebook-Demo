@@ -11,17 +11,17 @@ $fb_config = array(
 				);
 $facebook = new Facebook($fb_config);
 
-if($facebook->getUser() !== 0) { // If the user is logged in
+if($facebook->getUser() != 0) { // If the user is logged in
 	try {
 		$user_data = $facebook->api('/me','GET');
 		$friends = $facebook->api('/me/friends','GET');
 	} catch(FacebookApiException $e) {
 		// Facebook may give you a user ID even if the user is logged
 		// out. You'll need to make them login again.
-		header("Location: " $facebook->getLoginUrl() ); // Redirect the user to the login page.
+		header("Location: " . $facebook->getLoginUrl() ); // Redirect the user to the login page.
 	}
 } else { // If the user is not logged in
-	header("Location: " $facebook->getLoginUrl() ); // Redirect the user to the login page.
+	header("Location: " . $facebook->getLoginUrl() ); // Redirect the user to the login page.
 }
 
 ?>
