@@ -21,6 +21,7 @@ input,select{vertical-align:middle}
 /* Styles */
 body {
 	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1em;
 }
 #outer_container {
 	width: 760px;
@@ -33,22 +34,17 @@ body {
 }
 h1 {
 	font-size: 32px;
-	line-height: 42px;
-}
-p {
-	line-height:20px;
+	margin-bottom: 10px;
 }
 #intro {
 	margin: 20px 0 12.5px 0;
 }
-#facetiles a,#facetiles a img {
-	border:0;
-	margin:0;
-	padding:0;
-}
-.link {
-	display:inline;
-	border:0;
-	margin:0;
-	padding:0;
+.avatar {
+	display: block;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	margin: 0 auto;
+	-moz-border-radius 10px;
+	-webkit-border-radius 10px;
 }
