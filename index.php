@@ -41,10 +41,9 @@ if($facebook->getUser() !== 0) { // If the user is logged in
 				<p>Welcome to Orchestra's demo Facebook app! We're just going to show you a grid of your friends!</p>
 			</div>
 			<div id="facetiles">
-				<?php /* foreach($friends as $friend) {
-					echo '<a href="http://facebook.com/profile.php?id='.$friend->id.'" title="'.$friend->name.'"><img src="http://graph.facebook.com/'.$friend->id.'/picture" alt="'.$friend->name.'"></a>';
-				} */ ?>
-				<?php var_dump($friends); ?>
+				<?php foreach($friends['data'] as $friend) {
+					echo '<a href="http://facebook.com/profile.php?id='.$friend['id'].'" title="'.$friend['name'].'"><img src="http://graph.facebook.com/'.$friend['id'].'/picture" alt="'.$friend['name'].'"></a>';
+				} ?>
 			</div>
 		</div>
 	</body>
