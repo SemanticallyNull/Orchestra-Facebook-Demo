@@ -32,6 +32,9 @@ if($facebook->getUser() !== 0) { // If the user is logged in
 	</head>
 	<body>
 		<div id="outer_container">
+			<div id="header">
+				<img src="https://my.orchestra.io/images/template_logo.png" title="Orchestra" alt="Orchestra">
+			</div>
 			<h1>Hi <?=$user_data['name']?></h1>
 		</div>
 	</body>
