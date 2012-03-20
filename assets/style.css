@@ -21,11 +21,11 @@ input,select{vertical-align:middle}
 /* Styles */
 body {
 	font-family: Helvetica, Arial, sans-serif;
-    background: #014C80;
 	color: #FFFFFF;
 }
 
 #outer_container {
 	width:760px;
 	height:100%;
+    background: url("/images/template_header_background.png") repeat-x;
 }
