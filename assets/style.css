@@ -21,7 +21,7 @@ input,select{vertical-align:middle}
 /* Styles */
 body {
 	font-family: Helvetica, Arial, sans-serif;
-	line-height: 1em;
+	line-height: 0;
 }
 #outer_container {
 	width: 760px;
