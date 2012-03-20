@@ -21,6 +21,7 @@ input,select{vertical-align:middle}
 /* Styles */
 body {
 	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1em;
 }
 #outer_container {
 	width: 760px;
@@ -33,7 +34,10 @@ body {
 }
 h1 {
 	font-size: 32px;
-	margin-bottom: 10px;
+	line-height: 42px;
+}
+p {
+	line-height:20px;
 }
 #intro {
 	margin: 20px 0 12.5px 0;
