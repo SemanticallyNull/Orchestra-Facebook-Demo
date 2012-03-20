@@ -18,12 +18,10 @@ if($facebook->getUser() !== 0) { // If the user is logged in
 	} catch(FacebookApiException $e) {
 		// Facebook may give you a user ID even if the user is logged
 		// out. You'll need to make them login again.
-		echo '<script type="text/javascipt"> top.location.href = "' . $facebook->getLoginUrl() . '" </script>'; // Redirect the user to the login page.
-		die();
+		header("Location: " $facebook->getLoginUrl() ); // Redirect the user to the login page.
 	}
 } else { // If the user is not logged in
-	echo '<script type="text/javascipt"> top.location.href = "' . $facebook->getLoginUrl() . '" </script>'; // Redirect the user to the login page.
-	die();
+	header("Location: " $facebook->getLoginUrl() ); // Redirect the user to the login page.
 }
 
 ?>
