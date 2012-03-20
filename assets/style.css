@@ -21,16 +21,17 @@ input,select{vertical-align:middle}
 /* Styles */
 body {
 	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.2em;
 }
 #outer_container {
-	width:760px;
+	width: 760px;
 }
 #header {
-	margin:20px 0 12.5px 0;
+	margin: 20px 0 12.5px 0;
 }
 #logo {
-	width:300px;
+	width: 300px;
 }
 h1 {
-	font-size:32px;
+	font-size: 32px;
 }
