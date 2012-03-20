@@ -36,6 +36,7 @@ if($facebook->getUser() !== 0) { // If the user is logged in
 				<img id="logo" src="assets/orchestra.png" title="Orchestra" alt="Orchestra">
 			</div>
 			<h1>Hi <?=$user_data['name']?>,</h1>
+			<p>Welcome to Orchestra's demo Facebook app! We're just going to show you a grid of your friends!</p>
 		</div>
 	</body>
 </html>
