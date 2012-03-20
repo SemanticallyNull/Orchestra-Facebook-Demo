@@ -18,10 +18,12 @@ if($facebook->getUser() != 0) { // If the user is logged in
 	} catch(FacebookApiException $e) {
 		// Facebook may give you a user ID even if the user is logged
 		// out. You'll need to make them login again.
-		header("Location: " . $facebook->getLoginUrl() ); // Redirect the user to the login page.
+		//header("Location: " . $facebook->getLoginUrl() ); // Redirect the user to the login page.
+		echo "<meta http-equiv='refresh' content='0;url=".$facebook->getLoginUrl()."'";
 	}
 } else { // If the user is not logged in
-	header("Location: " . $facebook->getLoginUrl() ); // Redirect the user to the login page.
+	//header("Location: " . $facebook->getLoginUrl() ); // Redirect the user to the login page.
+	echo "<meta http-equiv='refresh' content='0;url=".$facebook->getLoginUrl()."'";
 }
 
 ?>
