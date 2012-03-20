@@ -22,15 +22,12 @@ input,select{vertical-align:middle}
 body {
 	font-family: Helvetica, Arial, sans-serif;
 }
-
 #outer_container {
 	width:760px;
 }
-
 #header {
-	margin-bottom:20px 0 0 12.5px;
+	margin:20px 0 0 12.5px;
 }
-
 #logo {
 	width:300px;
 }
