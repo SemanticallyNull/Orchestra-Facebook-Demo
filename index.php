@@ -42,7 +42,7 @@ if($facebook->getUser() !== 0) { // If the user is logged in
 			</div>
 			<div id="facetiles">
 				<?php foreach($friends as $friend) {
-					echo '<a href="http://facebook.com/profile.php?id='.$friend->id.'" title="'.$friend->name.'"><img src="http://graph.facebook.com/'.$friend->id.'/picture" alt="'.$friend->name'"></a>';
+					echo '<a href="http://facebook.com/profile.php?id='.$friend->id.'" title="'.$friend->name.'"><img src="http://graph.facebook.com/'.$friend->id.'/picture" alt="'.$friend->name.'"></a>';
 				} ?>
 			</div>
 		</div>
