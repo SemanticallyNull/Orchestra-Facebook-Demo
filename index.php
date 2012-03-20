@@ -10,3 +10,5 @@ $fb_config = array(
 					'fileUpload' => false, 
 				);
 $facebook = new Facebook($fb_config);
+
+echo $facebook->getUser();
