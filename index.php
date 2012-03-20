@@ -32,6 +32,7 @@ if($facebook->getUser() !== 0) { // If the user is logged in
 	</head>
 	<body>
 		<div id="outer_container">
+			<h1>Hi <?=$user_data['name']?></h1>
 		</div>
 	</body>
 </html>
