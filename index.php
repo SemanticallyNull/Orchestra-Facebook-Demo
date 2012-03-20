@@ -14,13 +14,14 @@ $facebook = new Facebook($fb_config);
 if($facebook->getUser() !== 0) { // If the user is logged in
 	try {
 		$user_data = $facebook->api('/me','GET');
+		$friends = $facebook->api('/me/friends','GET');
 	} catch(FacebookApiException $e) {
 		// Facebook may give you a user ID even if the user is logged
 		// out. You'll need to make them login again.
-		header('Location: ' . $facebook->getLoginUrl()); // Redirect the user to the login page
+		echo '<script type="text/javascipt"> top.location.href = "' . $facebook->getLoginUrl() . '" </script>'; // Redirect the user to the login page.
 	}
 } else { // If the user is not logged in
-	header('Location: ' . $facebook->getLoginUrl()); // Redirect the user to the login page
+	echo '<script type="text/javascipt"> top.location.href = "' . $facebook->getLoginUrl() . '" </script>'; // Redirect the user to the login page.
 }
 
 ?>
@@ -38,6 +39,11 @@ if($facebook->getUser() !== 0) { // If the user is logged in
 			<div id="intro">
 				<h1>Hi <?=$user_data['name']?>,</h1>
 				<p>Welcome to Orchestra's demo Facebook app! We're just going to show you a grid of your friends!</p>
+			</div>
+			<div id="facetiles">
+				<?php foreach($friends as $friend) {
+					echo '<a href="http://facebook.com/profile.php?id='.$friend->id.'" title="'.$friend->name.'"><img src="http://graph.facebook.com/'.$friend->id.'/picture" alt="'.$friend->name'"></a>';
+				} ?>
 			</div>
 		</div>
 	</body>
