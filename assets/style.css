@@ -21,7 +21,6 @@ input,select{vertical-align:middle}
 /* Styles */
 body {
 	font-family: Helvetica, Arial, sans-serif;
-	line-height: 0;
 }
 #outer_container {
 	width: 760px;
@@ -39,12 +38,6 @@ h1 {
 #intro {
 	margin: 20px 0 12.5px 0;
 }
-.avatar {
-	display: block;
-	height: 50px;
-	width: 50px;
-	text-align: center;
-	margin: 0 auto;
-	-moz-border-radius 10px;
-	-webkit-border-radius 10px;
+#facetiles {
+	line-height: 0;
 }
